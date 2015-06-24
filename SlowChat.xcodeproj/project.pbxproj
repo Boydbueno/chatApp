@@ -14,6 +14,8 @@
 		D6B59B801B3ACAB0002275C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B7F1B3ACAB0002275C9 /* Images.xcassets */; };
 		D6B59B831B3ACAB0002275C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B811B3ACAB0002275C9 /* LaunchScreen.xib */; };
 		D6B59B8F1B3ACAB0002275C9 /* SlowChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B8E1B3ACAB0002275C9 /* SlowChatTests.swift */; };
+		D6B59B991B3AD5C1002275C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */; };
+		D6B59B9B1B3ADC8C002275C9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		D6B59B881B3ACAB0002275C9 /* SlowChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B59B8D1B3ACAB0002275C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B59B8E1B3ACAB0002275C9 /* SlowChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowChatTests.swift; sourceTree = "<group>"; };
+		D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				D6B59B811B3ACAB0002275C9 /* LaunchScreen.xib */,
 				D6B59B771B3ACAB0002275C9 /* SlowChat.xcdatamodeld */,
 				D6B59B731B3ACAB0002275C9 /* Supporting Files */,
+				D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */,
+				D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */,
 			);
 			path = SlowChat;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B59B9B1B3ADC8C002275C9 /* Settings.bundle in Resources */,
 				D6B59B7E1B3ACAB0002275C9 /* Main.storyboard in Resources */,
 				D6B59B831B3ACAB0002275C9 /* LaunchScreen.xib in Resources */,
 				D6B59B801B3ACAB0002275C9 /* Images.xcassets in Resources */,
@@ -215,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B59B991B3AD5C1002275C9 /* LoginViewController.swift in Sources */,
 				D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */,
 				D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */,
 				D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */,
