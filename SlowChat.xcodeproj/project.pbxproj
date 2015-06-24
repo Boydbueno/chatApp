@@ -17,6 +17,7 @@
 		D6B59B991B3AD5C1002275C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */; };
 		D6B59B9B1B3ADC8C002275C9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */; };
 		D6B59B9D1B3B1524002275C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B9C1B3B1524002275C9 /* SettingsViewController.swift */; };
+		D6B59B9F1B3B1A09002275C9 /* CategoryPrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B9E1B3B1A09002275C9 /* CategoryPrefViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D6B59B9C1B3B1524002275C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D6B59B9E1B3B1A09002275C9 /* CategoryPrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPrefViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				D6B59B731B3ACAB0002275C9 /* Supporting Files */,
 				D6B59B981B3AD5C1002275C9 /* LoginViewController.swift */,
 				D6B59B9A1B3ADC8C002275C9 /* Settings.bundle */,
+				D6B59B9E1B3B1A09002275C9 /* CategoryPrefViewController.swift */,
 			);
 			path = SlowChat;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */,
 				D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */,
 				D6B59B9D1B3B1524002275C9 /* SettingsViewController.swift in Sources */,
+				D6B59B9F1B3B1A09002275C9 /* CategoryPrefViewController.swift in Sources */,
 				D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

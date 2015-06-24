@@ -62,13 +62,13 @@
 			<key>Key</key>
 			<string>fav_category_pref</string>
 			<key>DefaultValue</key>
-			<string>games</string>
+			<string>0</string>
 			<key>Values</key>
 			<array>
-				<string>sport</string>
-				<string>games</string>
-				<string>finance</string>
-				<string>animals</string>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
 			</array>
 			<key>Titles</key>
 			<array>

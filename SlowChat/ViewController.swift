@@ -18,21 +18,12 @@ class ViewController: UIViewController {
         } else {
             showAutoLoginDisabledAlert()
         }
-        
-        NSNotificationCenter.defaultCenter().addObserver(
-            self,
-            selector: "defaultsChanged:",
-            name: NSUserDefaultsDidChangeNotification,
-            object: nil)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func defaultsChanged(notification : NSNotification) {
-        showAutoLoginDisabledAlert()
     }
     
     private func showAutoLoginDisabledAlert() {

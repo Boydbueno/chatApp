@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nNn-ef-pjm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="1087" y="426"/>
         </scene>
-        <!--View Controller-->
+        <!--Category Preferences-->
         <scene sceneID="SSa-ji-SpC">
             <objects>
-                <viewController id="AWa-Ol-AB7" sceneMemberID="viewController">
+                <viewController title="Category Preferences" id="AWa-Ol-AB7" customClass="CategoryPrefViewController" customModule="SlowChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9uO-Ag-55Y"/>
                         <viewControllerLayoutGuide type="bottom" id="ft6-ol-hxY"/>
@@ -31,8 +32,40 @@
                     <view key="view" contentMode="scaleToFill" id="fZn-uN-8Rg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEd-IV-wyG">
+                                <rect key="frame" x="233" y="99" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EaB-0w-dLJ"/>
+                                    <constraint firstAttribute="width" constant="134" id="Iu5-Ia-b6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzI-rd-1Bo">
+                                <rect key="frame" x="0.0" y="128" width="600" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="Fh8-IT-D8Q"/>
+                                    <constraint firstAttribute="width" constant="600" id="rVo-EG-pbx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="AWa-Ol-AB7" id="DXT-la-c7D"/>
+                                    <outlet property="delegate" destination="AWa-Ol-AB7" id="h6B-Go-6EE"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cEd-IV-wyG" secondAttribute="centerX" id="VUn-J0-bKG"/>
+                            <constraint firstItem="cEd-IV-wyG" firstAttribute="top" secondItem="9uO-Ag-55Y" secondAttribute="bottom" constant="35" id="VaS-yJ-gqR"/>
+                            <constraint firstAttribute="centerX" secondItem="FzI-rd-1Bo" secondAttribute="centerX" id="jty-6v-zsI"/>
+                            <constraint firstItem="FzI-rd-1Bo" firstAttribute="top" secondItem="cEd-IV-wyG" secondAttribute="bottom" constant="8" id="r1V-AY-elS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="categoryPicker" destination="FzI-rd-1Bo" id="H1K-Kw-fwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOZ-3F-7Gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,14 +83,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENP-qB-EPh">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENP-qB-EPh">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="organize" id="a34-5H-OEm"/>
+                                    <barButtonItem systemItem="organize" id="a34-5H-OEm">
+                                        <connections>
+                                            <segue destination="AWa-Ol-AB7" kind="show" id="bQf-hk-GrO"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ENP-qB-EPh" secondAttribute="trailing" constant="-16" id="1mC-sC-OzS"/>
+                            <constraint firstItem="ENP-qB-EPh" firstAttribute="leading" secondItem="YS3-kc-rS0" secondAttribute="leadingMargin" constant="-16" id="Kj7-Dg-Ofg"/>
+                            <constraint firstItem="1uw-80-12s" firstAttribute="top" secondItem="ENP-qB-EPh" secondAttribute="bottom" id="Wcz-JB-L3o"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5of-I6-ThU">
                         <barButtonItem key="rightBarButtonItem" title="User" id="CnF-aD-Vas">
@@ -70,7 +112,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trw-1A-i2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Home" id="FPE-Os-9xJ"/>
             </objects>
-            <point key="canvasLocation" x="730" y="1284"/>
+            <point key="canvasLocation" x="748" y="1266"/>
         </scene>
         <!--User-->
         <scene sceneID="Znw-S4-vgF">
