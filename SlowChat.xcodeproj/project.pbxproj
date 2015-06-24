@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B751B3ACAB0002275C9 /* AppDelegate.swift */; };
+		D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B771B3ACAB0002275C9 /* SlowChat.xcdatamodeld */; };
+		D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B7A1B3ACAB0002275C9 /* ViewController.swift */; };
+		D6B59B7E1B3ACAB0002275C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B7C1B3ACAB0002275C9 /* Main.storyboard */; };
+		D6B59B801B3ACAB0002275C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B7F1B3ACAB0002275C9 /* Images.xcassets */; };
+		D6B59B831B3ACAB0002275C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B59B811B3ACAB0002275C9 /* LaunchScreen.xib */; };
+		D6B59B8F1B3ACAB0002275C9 /* SlowChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B8E1B3ACAB0002275C9 /* SlowChatTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B59B891B3ACAB0002275C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B59B681B3ACAB0002275C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B59B6F1B3ACAB0002275C9;
+			remoteInfo = SlowChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B59B701B3ACAB0002275C9 /* SlowChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B59B741B3ACAB0002275C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B59B751B3ACAB0002275C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6B59B781B3ACAB0002275C9 /* SlowChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlowChat.xcdatamodel; sourceTree = "<group>"; };
+		D6B59B7A1B3ACAB0002275C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6B59B7D1B3ACAB0002275C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B59B7F1B3ACAB0002275C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6B59B821B3ACAB0002275C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D6B59B881B3ACAB0002275C9 /* SlowChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B59B8D1B3ACAB0002275C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B59B8E1B3ACAB0002275C9 /* SlowChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowChatTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B59B6D1B3ACAB0002275C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B59B851B3ACAB0002275C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B59B671B3ACAB0002275C9 = {
+			isa = PBXGroup;
+			children = (
+				D6B59B721B3ACAB0002275C9 /* SlowChat */,
+				D6B59B8B1B3ACAB0002275C9 /* SlowChatTests */,
+				D6B59B711B3ACAB0002275C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B59B711B3ACAB0002275C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B59B701B3ACAB0002275C9 /* SlowChat.app */,
+				D6B59B881B3ACAB0002275C9 /* SlowChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B59B721B3ACAB0002275C9 /* SlowChat */ = {
+			isa = PBXGroup;
+			children = (
+				D6B59B751B3ACAB0002275C9 /* AppDelegate.swift */,
+				D6B59B7A1B3ACAB0002275C9 /* ViewController.swift */,
+				D6B59B7C1B3ACAB0002275C9 /* Main.storyboard */,
+				D6B59B7F1B3ACAB0002275C9 /* Images.xcassets */,
+				D6B59B811B3ACAB0002275C9 /* LaunchScreen.xib */,
+				D6B59B771B3ACAB0002275C9 /* SlowChat.xcdatamodeld */,
+				D6B59B731B3ACAB0002275C9 /* Supporting Files */,
+			);
+			path = SlowChat;
+			sourceTree = "<group>";
+		};
+		D6B59B731B3ACAB0002275C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B59B741B3ACAB0002275C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B59B8B1B3ACAB0002275C9 /* SlowChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B59B8E1B3ACAB0002275C9 /* SlowChatTests.swift */,
+				D6B59B8C1B3ACAB0002275C9 /* Supporting Files */,
+			);
+			path = SlowChatTests;
+			sourceTree = "<group>";
+		};
+		D6B59B8C1B3ACAB0002275C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B59B8D1B3ACAB0002275C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B59B6F1B3ACAB0002275C9 /* SlowChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B59B921B3ACAB0002275C9 /* Build configuration list for PBXNativeTarget "SlowChat" */;
+			buildPhases = (
+				D6B59B6C1B3ACAB0002275C9 /* Sources */,
+				D6B59B6D1B3ACAB0002275C9 /* Frameworks */,
+				D6B59B6E1B3ACAB0002275C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowChat;
+			productName = SlowChat;
+			productReference = D6B59B701B3ACAB0002275C9 /* SlowChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B59B871B3ACAB0002275C9 /* SlowChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B59B951B3ACAB0002275C9 /* Build configuration list for PBXNativeTarget "SlowChatTests" */;
+			buildPhases = (
+				D6B59B841B3ACAB0002275C9 /* Sources */,
+				D6B59B851B3ACAB0002275C9 /* Frameworks */,
+				D6B59B861B3ACAB0002275C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B59B8A1B3ACAB0002275C9 /* PBXTargetDependency */,
+			);
+			name = SlowChatTests;
+			productName = SlowChatTests;
+			productReference = D6B59B881B3ACAB0002275C9 /* SlowChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B59B681B3ACAB0002275C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = boydbueno;
+				TargetAttributes = {
+					D6B59B6F1B3ACAB0002275C9 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D6B59B871B3ACAB0002275C9 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D6B59B6F1B3ACAB0002275C9;
+					};
+				};
+			};
+			buildConfigurationList = D6B59B6B1B3ACAB0002275C9 /* Build configuration list for PBXProject "SlowChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B59B671B3ACAB0002275C9;
+			productRefGroup = D6B59B711B3ACAB0002275C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B59B6F1B3ACAB0002275C9 /* SlowChat */,
+				D6B59B871B3ACAB0002275C9 /* SlowChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B59B6E1B3ACAB0002275C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B59B7E1B3ACAB0002275C9 /* Main.storyboard in Resources */,
+				D6B59B831B3ACAB0002275C9 /* LaunchScreen.xib in Resources */,
+				D6B59B801B3ACAB0002275C9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B59B861B3ACAB0002275C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B59B6C1B3ACAB0002275C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */,
+				D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */,
+				D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B59B841B3ACAB0002275C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B59B8F1B3ACAB0002275C9 /* SlowChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B59B8A1B3ACAB0002275C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B59B6F1B3ACAB0002275C9 /* SlowChat */;
+			targetProxy = D6B59B891B3ACAB0002275C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B59B7C1B3ACAB0002275C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B59B7D1B3ACAB0002275C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B59B811B3ACAB0002275C9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B59B821B3ACAB0002275C9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B59B901B3ACAB0002275C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6B59B911B3ACAB0002275C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B59B931B3ACAB0002275C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlowChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6B59B941B3ACAB0002275C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlowChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D6B59B961B3ACAB0002275C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SlowChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowChat.app/SlowChat";
+			};
+			name = Debug;
+		};
+		D6B59B971B3ACAB0002275C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SlowChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowChat.app/SlowChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B59B6B1B3ACAB0002275C9 /* Build configuration list for PBXProject "SlowChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B59B901B3ACAB0002275C9 /* Debug */,
+				D6B59B911B3ACAB0002275C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B59B921B3ACAB0002275C9 /* Build configuration list for PBXNativeTarget "SlowChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B59B931B3ACAB0002275C9 /* Debug */,
+				D6B59B941B3ACAB0002275C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B59B951B3ACAB0002275C9 /* Build configuration list for PBXNativeTarget "SlowChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B59B961B3ACAB0002275C9 /* Debug */,
+				D6B59B971B3ACAB0002275C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D6B59B771B3ACAB0002275C9 /* SlowChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D6B59B781B3ACAB0002275C9 /* SlowChat.xcdatamodel */,
+			);
+			currentVersion = D6B59B781B3ACAB0002275C9 /* SlowChat.xcdatamodel */;
+			path = SlowChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D6B59B681B3ACAB0002275C9 /* Project object */;
+}
