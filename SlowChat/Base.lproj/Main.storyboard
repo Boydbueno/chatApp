@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1207" y="-948"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Chat Main Controller-->
         <scene sceneID="1bm-2y-ZWK">
             <objects>
-                <tabBarController id="zGf-tB-CQB" sceneMemberID="viewController">
+                <tabBarController id="zGf-tB-CQB" customClass="ChatMainController" customModule="SlowChat" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bOk-lb-VfS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -110,8 +110,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3Zi-zX-tXd" kind="relationship" relationship="viewControllers" id="4LS-yg-2k7"/>
                         <segue destination="dTh-fA-aky" kind="relationship" relationship="viewControllers" id="l7S-iv-R1b"/>
+                        <segue destination="3Zi-zX-tXd" kind="relationship" relationship="viewControllers" id="4LS-yg-2k7"/>
                         <segue destination="hAM-cL-zfH" kind="relationship" relationship="viewControllers" id="SAe-GJ-YC5"/>
                         <segue destination="pSi-Q4-dmk" kind="relationship" relationship="viewControllers" id="JBm-qI-1TC"/>
                     </connections>
