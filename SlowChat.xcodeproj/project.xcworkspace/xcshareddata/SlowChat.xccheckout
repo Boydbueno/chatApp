@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6BFA5ADC-94F0-41D5-B7EB-C757950B2866</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SlowChat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CCD322A0609098C950299CB7C2567C04CE19EF44</key>
 		<string>https://github.com/Boydbueno/chatApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SlowChat.xcodeproj/project.xcworkspace</string>
+	<string>SlowChat.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CCD322A0609098C950299CB7C2567C04CE19EF44</key>

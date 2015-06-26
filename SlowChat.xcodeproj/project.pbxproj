@@ -431,6 +431,7 @@
 				D6B59B941B3ACAB0002275C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6B59B951B3ACAB0002275C9 /* Build configuration list for PBXNativeTarget "SlowChatTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +440,7 @@
 				D6B59B971B3ACAB0002275C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
