@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51D28E1FDFDCA243E6D23495 /* Pods-SlowChat-IJReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C9972491066122698EA809 /* Pods-SlowChat-IJReachability-dummy.m */; };
+		68564224934B121FEC31D65E /* Pods-SlowChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9971C7FD1F4A74DC57264A76 /* Pods-SlowChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757BCC55C55F22782E3F473C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07EAFB00C7ABAC70DDCABEC /* Foundation.framework */; };
+		81A151AD0E5D84C6B5E845C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ED5D8EB2F405BF7E41B14E /* SystemConfiguration.framework */; };
+		8AC3326D8F0FE9D6B389FC16 /* IJReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9B7E3EF6257F522395DCA /* IJReachability.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D292565E58C33AAE88FF58B6 /* Pods-SlowChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2D5852AC4B4D5777E784 /* Pods-SlowChat-dummy.m */; };
+		E264CCCEB57A0E1C2F7BB279 /* Pods-SlowChat-IJReachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DF56C5C785AB883A47A71B /* Pods-SlowChat-IJReachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47F74493BA0BF0F8019AF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07EAFB00C7ABAC70DDCABEC /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FDD0456332A1F9FF883E6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3FDCCFB6EBB383F812DCDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32A9A8A2B7F0A11709BFB71;
+			remoteInfo = "Pods-SlowChat-IJReachability";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B0E93841FC061C72856AA6 /* Pods-SlowChat-IJReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlowChat-IJReachability.xcconfig"; sourceTree = "<group>"; };
+		1418D1EEE8F611B17FD615C6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		29321FA4892A49EA50AC7774 /* Pods-SlowChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlowChat-resources.sh"; sourceTree = "<group>"; };
+		335D43B18F8F02AD47A87BA9 /* Pods-SlowChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlowChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		40BE2D5852AC4B4D5777E784 /* Pods-SlowChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlowChat-dummy.m"; sourceTree = "<group>"; };
+		42C9972491066122698EA809 /* Pods-SlowChat-IJReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlowChat-IJReachability-dummy.m"; sourceTree = "<group>"; };
+		483FA583B3AEBBFF28A1A88C /* Pods-SlowChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlowChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C649D0F04E616E822D18E6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A52B298FFA2207E25898C25 /* Pods-SlowChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlowChat-frameworks.sh"; sourceTree = "<group>"; };
+		7E57B5064554F1B47DD7A2B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D27F564A8312414657F859 /* Pods-SlowChat-IJReachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlowChat-IJReachability.modulemap"; sourceTree = "<group>"; };
+		97CDC3DFB46B442BC383DF07 /* Pods-SlowChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlowChat.release.xcconfig"; sourceTree = "<group>"; };
+		9829A7ABC72641DD36AEEACC /* IJReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IJReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		984AE87698D6535A1F92A668 /* Pods-SlowChat-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlowChat-environment.h"; sourceTree = "<group>"; };
+		9971C7FD1F4A74DC57264A76 /* Pods-SlowChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlowChat-umbrella.h"; sourceTree = "<group>"; };
+		A9ED5D8EB2F405BF7E41B14E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		AD4596D2F9EC1CCA66FFCB25 /* Pods-SlowChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlowChat.modulemap"; sourceTree = "<group>"; };
+		B4E9B7E3EF6257F522395DCA /* IJReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IJReachability.swift; path = IJReachability/IJReachability/IJReachability.swift; sourceTree = "<group>"; };
+		C07EAFB00C7ABAC70DDCABEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBEC9057ED4780153F112964 /* Pods-SlowChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlowChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D07052F5520E4E3534707F25 /* Pods-SlowChat-IJReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlowChat-IJReachability-prefix.pch"; sourceTree = "<group>"; };
+		D19F875290B0F1BD425E8F9F /* Pods_SlowChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5ED4AF41BBBC3E265F6D700 /* Pods-SlowChat-IJReachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlowChat-IJReachability-Private.xcconfig"; sourceTree = "<group>"; };
+		F6DF56C5C785AB883A47A71B /* Pods-SlowChat-IJReachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlowChat-IJReachability-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2E41CEDF9564E06CCE4E8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47F74493BA0BF0F8019AF87 /* Foundation.framework in Frameworks */,
+				81A151AD0E5D84C6B5E845C9 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92CA19916B0275496CFE3F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757BCC55C55F22782E3F473C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D7D2E9557E7BE4A70F68B42 /* IJReachability */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9B7E3EF6257F522395DCA /* IJReachability.swift */,
+				5225A960567D2C03D9E4006D /* Support Files */,
+			);
+			path = IJReachability;
+			sourceTree = "<group>";
+		};
+		2F938A56558AB899748A15CE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C07EAFB00C7ABAC70DDCABEC /* Foundation.framework */,
+				A9ED5D8EB2F405BF7E41B14E /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		401FC43E16DA1D91EC4BC7BD = {
+			isa = PBXGroup;
+			children = (
+				1418D1EEE8F611B17FD615C6 /* Podfile */,
+				DA32FAC9D1BE9A27EDF56AB3 /* Frameworks */,
+				BB34876EB71C1442D2BC2C43 /* Pods */,
+				801698349801AD1E42863411 /* Products */,
+				D7C18C69BDF9FAD2F65E1477 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		5225A960567D2C03D9E4006D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E57B5064554F1B47DD7A2B0 /* Info.plist */,
+				94D27F564A8312414657F859 /* Pods-SlowChat-IJReachability.modulemap */,
+				09B0E93841FC061C72856AA6 /* Pods-SlowChat-IJReachability.xcconfig */,
+				E5ED4AF41BBBC3E265F6D700 /* Pods-SlowChat-IJReachability-Private.xcconfig */,
+				42C9972491066122698EA809 /* Pods-SlowChat-IJReachability-dummy.m */,
+				D07052F5520E4E3534707F25 /* Pods-SlowChat-IJReachability-prefix.pch */,
+				F6DF56C5C785AB883A47A71B /* Pods-SlowChat-IJReachability-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SlowChat-IJReachability";
+			sourceTree = "<group>";
+		};
+		801698349801AD1E42863411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9829A7ABC72641DD36AEEACC /* IJReachability.framework */,
+				D19F875290B0F1BD425E8F9F /* Pods_SlowChat.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B478E18B331D26028E6521A3 /* Pods-SlowChat */ = {
+			isa = PBXGroup;
+			children = (
+				5C649D0F04E616E822D18E6C /* Info.plist */,
+				AD4596D2F9EC1CCA66FFCB25 /* Pods-SlowChat.modulemap */,
+				483FA583B3AEBBFF28A1A88C /* Pods-SlowChat-acknowledgements.markdown */,
+				335D43B18F8F02AD47A87BA9 /* Pods-SlowChat-acknowledgements.plist */,
+				40BE2D5852AC4B4D5777E784 /* Pods-SlowChat-dummy.m */,
+				984AE87698D6535A1F92A668 /* Pods-SlowChat-environment.h */,
+				7A52B298FFA2207E25898C25 /* Pods-SlowChat-frameworks.sh */,
+				29321FA4892A49EA50AC7774 /* Pods-SlowChat-resources.sh */,
+				9971C7FD1F4A74DC57264A76 /* Pods-SlowChat-umbrella.h */,
+				CBEC9057ED4780153F112964 /* Pods-SlowChat.debug.xcconfig */,
+				97CDC3DFB46B442BC383DF07 /* Pods-SlowChat.release.xcconfig */,
+			);
+			name = "Pods-SlowChat";
+			path = "Target Support Files/Pods-SlowChat";
+			sourceTree = "<group>";
+		};
+		BB34876EB71C1442D2BC2C43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D7D2E9557E7BE4A70F68B42 /* IJReachability */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7C18C69BDF9FAD2F65E1477 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B478E18B331D26028E6521A3 /* Pods-SlowChat */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DA32FAC9D1BE9A27EDF56AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F938A56558AB899748A15CE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C0B8549C23115C7A38F420A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68564224934B121FEC31D65E /* Pods-SlowChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE7F6350AE7A0D483D3AE4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E264CCCEB57A0E1C2F7BB279 /* Pods-SlowChat-IJReachability-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6AE9D35BFD6D4E20221B1F09 /* Pods-SlowChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1413850406F7C3D300C25CCE /* Build configuration list for PBXNativeTarget "Pods-SlowChat" */;
+			buildPhases = (
+				0BABB9819DB811864968FD36 /* Sources */,
+				E92CA19916B0275496CFE3F2 /* Frameworks */,
+				C0B8549C23115C7A38F420A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80EF367F9B1F5EE68EAE000E /* PBXTargetDependency */,
+			);
+			name = "Pods-SlowChat";
+			productName = "Pods-SlowChat";
+			productReference = D19F875290B0F1BD425E8F9F /* Pods_SlowChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C32A9A8A2B7F0A11709BFB71 /* Pods-SlowChat-IJReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B839FAE75BC99D82C69969C /* Build configuration list for PBXNativeTarget "Pods-SlowChat-IJReachability" */;
+			buildPhases = (
+				7BAE80C4619F229FE658F43E /* Sources */,
+				D2E41CEDF9564E06CCE4E8EC /* Frameworks */,
+				CEE7F6350AE7A0D483D3AE4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SlowChat-IJReachability";
+			productName = "Pods-SlowChat-IJReachability";
+			productReference = 9829A7ABC72641DD36AEEACC /* IJReachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A3FDCCFB6EBB383F812DCDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = CD76DBD158FF9B6F97CE429F /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 401FC43E16DA1D91EC4BC7BD;
+			productRefGroup = 801698349801AD1E42863411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AE9D35BFD6D4E20221B1F09 /* Pods-SlowChat */,
+				C32A9A8A2B7F0A11709BFB71 /* Pods-SlowChat-IJReachability */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BABB9819DB811864968FD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292565E58C33AAE88FF58B6 /* Pods-SlowChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BAE80C4619F229FE658F43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC3326D8F0FE9D6B389FC16 /* IJReachability.swift in Sources */,
+				51D28E1FDFDCA243E6D23495 /* Pods-SlowChat-IJReachability-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80EF367F9B1F5EE68EAE000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SlowChat-IJReachability";
+			target = C32A9A8A2B7F0A11709BFB71 /* Pods-SlowChat-IJReachability */;
+			targetProxy = 8FDD0456332A1F9FF883E6AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		181F4680888216F79D51DB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CDC3DFB46B442BC383DF07 /* Pods-SlowChat.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlowChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SlowChat/Pods-SlowChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlowChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51C93E82D11DB583B9714DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBEC9057ED4780153F112964 /* Pods-SlowChat.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlowChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SlowChat/Pods-SlowChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlowChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5385C3A219B81842498F35A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5ED4AF41BBBC3E265F6D700 /* Pods-SlowChat-IJReachability-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SlowChat-IJReachability/Pods-SlowChat-IJReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SlowChat-IJReachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SlowChat-IJReachability/Pods-SlowChat-IJReachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IJReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E42F4032BCB13DC0E7B2B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8964AC4A06EE9F5BD778F219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5ED4AF41BBBC3E265F6D700 /* Pods-SlowChat-IJReachability-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SlowChat-IJReachability/Pods-SlowChat-IJReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SlowChat-IJReachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SlowChat-IJReachability/Pods-SlowChat-IJReachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IJReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C121CC36D393E12DA10A00D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1413850406F7C3D300C25CCE /* Build configuration list for PBXNativeTarget "Pods-SlowChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C93E82D11DB583B9714DE2 /* Debug */,
+				181F4680888216F79D51DB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B839FAE75BC99D82C69969C /* Build configuration list for PBXNativeTarget "Pods-SlowChat-IJReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8964AC4A06EE9F5BD778F219 /* Debug */,
+				5385C3A219B81842498F35A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD76DBD158FF9B6F97CE429F /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E42F4032BCB13DC0E7B2B3E /* Debug */,
+				C121CC36D393E12DA10A00D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A3FDCCFB6EBB383F812DCDC /* Project object */;
+}

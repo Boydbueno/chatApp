@@ -1,4 +1,5 @@
 import UIKit
+import IJReachability
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
@@ -20,15 +21,36 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(sender: AnyObject) {
+
+        // Check for internet connection
+        if !IJReachability.isConnectedToNetwork() {
+            var noConnAlert = UIAlertController(title: "No internet connection", message: "Unable to login with internet connection. Please check your connection and try again.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+            noConnAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        
+            self.presentViewController(noConnAlert, animated: true, completion: nil)
+        }
         
         // Todo: Check credentials
         // Seperate login class
         
         // On fail
+        var invalidCredentialsAlert = UIAlertController(title: "Incorrect credentials", message: "The credentials are incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        invalidCredentialsAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        
+        self.presentViewController(invalidCredentialsAlert, animated: true, completion: nil)
+
         
         // Alert that credentials are incorrect
         
         // On success
+        var loginSuccessAlert = UIAlertController(title: "Login succeeded", message: "You have successfully logged in.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        loginSuccessAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        
+        self.presentViewController(loginSuccessAlert, animated: true, completion: nil)
+
         
         // Alert that
         // Redirect 

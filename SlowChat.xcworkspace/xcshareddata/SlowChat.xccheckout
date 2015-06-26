@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C28CEF9B-BC48-4088-9AF1-F42DE78A392A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SlowChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CCD322A0609098C950299CB7C2567C04CE19EF44</key>
+		<string>https://github.com/Boydbueno/chatApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SlowChat.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CCD322A0609098C950299CB7C2567C04CE19EF44</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Boydbueno/chatApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CCD322A0609098C950299CB7C2567C04CE19EF44</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCD322A0609098C950299CB7C2567C04CE19EF44</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SlowChat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
