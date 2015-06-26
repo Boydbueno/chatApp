@@ -20,6 +20,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(sender: AnyObject) {
+        
+        // Todo: Check credentials
+        // Seperate login class
+        
+        // On fail
+        
+        // Alert that credentials are incorrect
+        
+        // On success
+        
+        // Alert that
+        // Redirect 
+        
     }
     
     override func viewDidLoad() {

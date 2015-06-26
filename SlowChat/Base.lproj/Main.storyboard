@@ -46,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="e50-i0-F1c" kind="show" id="fGf-ap-SZ0"/>
+                                            <segue destination="e50-i0-F1c" kind="show" identifier="userHomeSeque" id="fGf-ap-SZ0"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

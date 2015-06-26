@@ -29,8 +29,8 @@ class ViewController: UITableViewController {
     private func showAutoLoginDisabledAlert() {
         var alert = UIAlertController(title: "Auto login is disabled", message: "Automatic login is not enabled. Do you wish to login manually now?", preferredStyle: UIAlertControllerStyle.Alert)
             
-        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action) -> Void in
-                
+        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: {
+            action in self.performSegueWithIdentifier("userHomeSeque", sender: self)
         }))
             
         alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
