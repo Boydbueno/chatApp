@@ -114,6 +114,7 @@
                         <segue destination="3Zi-zX-tXd" kind="relationship" relationship="viewControllers" id="4LS-yg-2k7"/>
                         <segue destination="hAM-cL-zfH" kind="relationship" relationship="viewControllers" id="SAe-GJ-YC5"/>
                         <segue destination="pSi-Q4-dmk" kind="relationship" relationship="viewControllers" id="JBm-qI-1TC"/>
+                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="HJ1-bS-ix8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhH-dQ-9h0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,4 +340,7 @@
             <point key="canvasLocation" x="449" y="507"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HJ1-bS-ix8"/>
+    </inferredMetricsTieBreakers>
 </document>

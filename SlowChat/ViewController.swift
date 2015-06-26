@@ -10,7 +10,8 @@ class ViewController: UITableViewController {
         var isAutoLoginEnabled = NSUserDefaults.standardUserDefaults().boolForKey("auto_login_pref")
         
         if isAutoLoginEnabled {
-            if login() {
+            var loginService = LoginService()
+            if loginService.login() {
                 // Show the categories
             } else {
                 showCredentialsIncorrectAlert()
@@ -40,10 +41,6 @@ class ViewController: UITableViewController {
     
     private func showCredentialsIncorrectAlert() {
         
-    }
-    
-    private func login() -> Bool {
-        return true;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

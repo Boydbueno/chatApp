@@ -33,27 +33,25 @@ class LoginViewController: UIViewController {
         
         // Todo: Check credentials
         // Seperate login class
+        var loginService = LoginService()
         
-        // On fail
-        var invalidCredentialsAlert = UIAlertController(title: "Incorrect credentials", message: "The credentials are incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
+        var isLoginSuccess = loginService.login()
         
-        invalidCredentialsAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        if !isLoginSuccess {
+            var invalidCredentialsAlert = UIAlertController(title: "Incorrect credentials", message: "The credentials are incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            invalidCredentialsAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            
+            self.presentViewController(invalidCredentialsAlert, animated: true, completion: nil)
+        } else {
+            var loginSuccessAlert = UIAlertController(title: "Login succeeded", message: "You have successfully logged in.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            loginSuccessAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            
+            self.presentViewController(loginSuccessAlert, animated: true, completion: nil)
         
-        self.presentViewController(invalidCredentialsAlert, animated: true, completion: nil)
-
-        
-        // Alert that credentials are incorrect
-        
-        // On success
-        var loginSuccessAlert = UIAlertController(title: "Login succeeded", message: "You have successfully logged in.", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        loginSuccessAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-        
-        self.presentViewController(loginSuccessAlert, animated: true, completion: nil)
-
-        
-        // Alert that
-        // Redirect 
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "is_logged_id")
+        }
         
     }
     
