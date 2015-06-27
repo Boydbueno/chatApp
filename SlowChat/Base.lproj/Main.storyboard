@@ -83,7 +83,7 @@
         <!--Games-->
         <scene sceneID="MdV-nx-63r">
             <objects>
-                <viewController title="Games" id="3Zi-zX-tXd" sceneMemberID="viewController">
+                <viewController title="Games" id="3Zi-zX-tXd" customClass="GamesController" customModule="SlowChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZVb-Q7-tk9"/>
                         <viewControllerLayoutGuide type="bottom" id="yCR-lV-BpG"/>
@@ -94,6 +94,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Games" id="kwh-84-Pa3"/>
+                    <connections>
+                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="cwc-q4-zFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Al-wq-Soe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +117,6 @@
                         <segue destination="3Zi-zX-tXd" kind="relationship" relationship="viewControllers" id="4LS-yg-2k7"/>
                         <segue destination="hAM-cL-zfH" kind="relationship" relationship="viewControllers" id="SAe-GJ-YC5"/>
                         <segue destination="pSi-Q4-dmk" kind="relationship" relationship="viewControllers" id="JBm-qI-1TC"/>
-                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="HJ1-bS-ix8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhH-dQ-9h0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -135,6 +137,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Finance" id="VCZ-HT-vVj"/>
+                    <connections>
+                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="sDP-9Q-gIc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXW-Lc-NUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,6 +159,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animals" id="1xI-JF-sQ0"/>
+                    <connections>
+                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="fXf-wn-uRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKp-6P-vLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +170,7 @@
         <!--Sport-->
         <scene sceneID="lH1-fd-khl">
             <objects>
-                <viewController id="dTh-fA-aky" sceneMemberID="viewController">
+                <viewController id="dTh-fA-aky" customClass="SportController" customModule="SlowChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p0x-4B-3pM"/>
                         <viewControllerLayoutGuide type="bottom" id="Vvf-7g-Scf"/>
@@ -173,6 +181,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sport" id="OE7-BB-bmo"/>
+                    <connections>
+                        <segue destination="e50-i0-F1c" kind="custom" identifier="chatUserSegue" id="WUs-2S-ckv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1f-Hb-czY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,23 +267,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1MQ-03-FkG">
-                                <rect key="frame" x="252" y="89" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-dz-iv2">
+                                <rect key="frame" x="257" y="285" width="84" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="S7O-ss-A9b"/>
-                                    <constraint firstAttribute="width" constant="97" id="vPj-yu-W5B"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="usernameChanged:" destination="e50-i0-F1c" eventType="editingDidEnd" id="opd-oq-Tpq"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-dz-iv2">
-                                <rect key="frame" x="281" y="291" width="38" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="IXh-Mx-EbU"/>
-                                    <constraint firstAttribute="height" constant="30" id="gGF-TW-jTx"/>
+                                    <constraint firstAttribute="height" constant="30" id="b6d-ky-8ui"/>
+                                    <constraint firstAttribute="width" constant="84" id="wfN-2a-ubi"/>
                                 </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -313,24 +312,36 @@
                                     <action selector="passwordChanged:" destination="e50-i0-F1c" eventType="editingDidEnd" id="I2u-sl-b7z"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1MQ-03-FkG">
+                                <rect key="frame" x="252" y="89" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S7O-ss-A9b"/>
+                                    <constraint firstAttribute="width" constant="97" id="vPj-yu-W5B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="usernameChanged:" destination="e50-i0-F1c" eventType="editingDidEnd" id="opd-oq-Tpq"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lXD-6B-SUr" firstAttribute="top" secondItem="Tto-tK-Ouy" secondAttribute="bottom" constant="25" id="3lj-t2-LXl"/>
                             <constraint firstAttribute="centerX" secondItem="lXD-6B-SUr" secondAttribute="centerX" id="AMS-ve-uy9"/>
-                            <constraint firstAttribute="centerX" secondItem="0eE-dz-iv2" secondAttribute="centerX" id="DIu-lr-Yyi"/>
                             <constraint firstItem="pGo-XJ-BxG" firstAttribute="top" secondItem="lXD-6B-SUr" secondAttribute="bottom" constant="15" id="Dnr-gp-Erv"/>
                             <constraint firstAttribute="centerX" secondItem="pGo-XJ-BxG" secondAttribute="centerX" id="Jlf-PF-85f"/>
+                            <constraint firstItem="0eE-dz-iv2" firstAttribute="top" secondItem="pGo-XJ-BxG" secondAttribute="bottom" constant="19" id="O7w-wr-qsV"/>
+                            <constraint firstAttribute="centerX" secondItem="0eE-dz-iv2" secondAttribute="centerX" id="S7x-b2-Xp7"/>
                             <constraint firstItem="Tto-tK-Ouy" firstAttribute="top" secondItem="1MQ-03-FkG" secondAttribute="bottom" constant="25" id="c5R-dm-dxm"/>
                             <constraint firstAttribute="centerX" secondItem="1MQ-03-FkG" secondAttribute="centerX" id="dpO-WK-fQR"/>
                             <constraint firstAttribute="centerX" secondItem="Tto-tK-Ouy" secondAttribute="centerX" id="gHN-vU-wnV"/>
-                            <constraint firstItem="1MQ-03-FkG" firstAttribute="top" secondItem="eh1-tB-wEW" secondAttribute="bottom" constant="25" id="hjD-fd-Nnh"/>
-                            <constraint firstAttribute="centerX" secondItem="0eE-dz-iv2" secondAttribute="centerX" id="m2F-Ns-UUK"/>
-                            <constraint firstItem="0eE-dz-iv2" firstAttribute="top" secondItem="pGo-XJ-BxG" secondAttribute="bottom" constant="25" id="rAM-hL-G8G"/>
+                            <constraint firstItem="1MQ-03-FkG" firstAttribute="top" secondItem="eh1-tB-wEW" secondAttribute="bottom" constant="69" id="j2D-Ch-GZx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="automaticLoginSwitch" destination="pGo-XJ-BxG" id="lXX-8r-hEs"/>
+                        <outlet property="loginButton" destination="0eE-dz-iv2" id="uM1-cc-uGw"/>
                         <outlet property="passwordField" destination="Tto-tK-Ouy" id="DMo-ia-bhw"/>
                         <outlet property="usernameField" destination="1MQ-03-FkG" id="8Re-0b-0z4"/>
                     </connections>
@@ -341,6 +352,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HJ1-bS-ix8"/>
+        <segue reference="cwc-q4-zFW"/>
     </inferredMetricsTieBreakers>
 </document>

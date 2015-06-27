@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0168ACA4085A7CFE599568F3 /* Pods_SlowChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313B9824987802D025A329F9 /* Pods_SlowChat.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D6208C061B3EEB02006A4FC5 /* GamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6208C051B3EEB02006A4FC5 /* GamesController.swift */; };
+		D6208C081B3EEC15006A4FC5 /* ChatroomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6208C071B3EEC15006A4FC5 /* ChatroomController.swift */; };
+		D6208C0A1B3EED58006A4FC5 /* SportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6208C091B3EED58006A4FC5 /* SportController.swift */; };
 		D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B751B3ACAB0002275C9 /* AppDelegate.swift */; };
 		D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B771B3ACAB0002275C9 /* SlowChat.xcdatamodeld */; };
 		D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59B7A1B3ACAB0002275C9 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 		2209F740E0E0F2A6D0128C25 /* Pods-SlowChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlowChat/Pods-SlowChat.debug.xcconfig"; sourceTree = "<group>"; };
 		313B9824987802D025A329F9 /* Pods_SlowChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D5A7F5CFAD6E06C3DA50AA /* Pods-SlowChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlowChat/Pods-SlowChat.release.xcconfig"; sourceTree = "<group>"; };
+		D6208C051B3EEB02006A4FC5 /* GamesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesController.swift; sourceTree = "<group>"; };
+		D6208C071B3EEC15006A4FC5 /* ChatroomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomController.swift; sourceTree = "<group>"; };
+		D6208C091B3EED58006A4FC5 /* SportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportController.swift; sourceTree = "<group>"; };
 		D6B59B701B3ACAB0002275C9 /* SlowChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B59B741B3ACAB0002275C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B59B751B3ACAB0002275C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 				D6B59B9E1B3B1A09002275C9 /* CategoryPrefViewController.swift */,
 				D6BB47E61B3DC5EE002BC1BE /* ChatMainController.swift */,
 				D6BB47E81B3DC872002BC1BE /* LoginService.swift */,
+				D6208C051B3EEB02006A4FC5 /* GamesController.swift */,
+				D6208C071B3EEC15006A4FC5 /* ChatroomController.swift */,
+				D6208C091B3EED58006A4FC5 /* SportController.swift */,
 			);
 			path = SlowChat;
 			sourceTree = "<group>";
@@ -313,8 +322,11 @@
 				D6BB47E71B3DC5EE002BC1BE /* ChatMainController.swift in Sources */,
 				D6B59B7B1B3ACAB0002275C9 /* ViewController.swift in Sources */,
 				D6B59B791B3ACAB0002275C9 /* SlowChat.xcdatamodeld in Sources */,
+				D6208C081B3EEC15006A4FC5 /* ChatroomController.swift in Sources */,
 				D6B59B9D1B3B1524002275C9 /* SettingsViewController.swift in Sources */,
 				D6B59B9F1B3B1A09002275C9 /* CategoryPrefViewController.swift in Sources */,
+				D6208C0A1B3EED58006A4FC5 /* SportController.swift in Sources */,
+				D6208C061B3EEB02006A4FC5 /* GamesController.swift in Sources */,
 				D6B59B761B3ACAB0002275C9 /* AppDelegate.swift in Sources */,
 				D6BB47E91B3DC872002BC1BE /* LoginService.swift in Sources */,
 			);

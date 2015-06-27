@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2500F06C912883FC0783E96"
-               BuildableName = "Pods_SlowChat.framework"
-               BlueprintName = "Pods-SlowChat"
+               BlueprintIdentifier = "BD1990F9ADFF58DAA16C499D"
+               BuildableName = "SwiftHTTP.framework"
+               BlueprintName = "Pods-SlowChat-SwiftHTTP"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
