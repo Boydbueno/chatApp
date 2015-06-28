@@ -8,9 +8,12 @@
 
 import UIKit
 import IJReachability
+import SwiftHTTP
+import CoreData
 
-class ChatroomController: UIViewController {
+class ChatroomController: UITableViewController {
     
+    var chatrooms = [NSManagedObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,8 @@ class ChatroomController: UIViewController {
         } else {
             getChatrooms()
         }
+        
+        loadChatrooms()
 
     }
     
@@ -59,7 +64,83 @@ class ChatroomController: UIViewController {
 
     
     private func getChatrooms() {
-        println()
+        
+        var appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+
+        var request = HTTPTask()
+        request.GET("http://178.62.135.117/chatrooms/games", parameters: nil, completionHandler: {(response: HTTPResponse) in
+            if let err = response.error {
+                println("error: \(err.localizedDescription)")
+                return //also notify app of failure as needed
+            }
+            if let data = response.responseObject as? NSData {
+                let str = NSString(data: data, encoding: NSUTF8StringEncoding)
+                let chatrooms = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
+
+                if chatrooms.count > 0 {
+                    var request = NSFetchRequest(entityName: "Chatroom")
+                    
+                    request.returnsObjectsAsFaults = false
+                    
+                    var results = context.executeFetchRequest(request, error: nil)!
+                    
+                    if results.count > 0 {
+                        
+                        for result in results {
+                            
+                            context.deleteObject(result as! NSManagedObject)
+                            
+                            context.save(nil)
+                            
+                        }
+                        
+                    }
+                    
+                    for chatroom in chatrooms {
+                        
+                        if let title = chatroom["title"] as? String {
+                            
+                            if let category = chatroom["category"] as? String {
+                                
+                                if let id = chatroom["id"] as? Int {
+                                
+                                    var newChatroom: NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("Chatroom", inManagedObjectContext: context) as! NSManagedObject
+                                
+                                    newChatroom.setValue(title, forKey: "title")
+                                    newChatroom.setValue(category, forKey: "category")
+                                    newChatroom.setValue(id, forKey: "id")
+                                
+                                    context.save(nil)
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    self.loadChatrooms()
+                }
+            }
+        })
+    }
+    
+    private func loadChatrooms() {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let fetchRequest = NSFetchRequest(entityName: "Chatroom")
+        
+        let fetchedResults =
+        managedContext.executeFetchRequest(fetchRequest, error: nil) as? [NSManagedObject]
+        
+        if let results = fetchedResults {
+            chatrooms = results
+        } else {
+            println("Could not fetch chatrooms")
+        }
     }
     
     private func loginSuccess() {
@@ -78,7 +159,62 @@ class ChatroomController: UIViewController {
         
         NSUserDefaults.standardUserDefaults().setBool(false, forKey: "is_logged_in")
     }
-
     
+    func saveChatroom(title: String, category: String) {
+        
+        // We try to post this data
+        var request = HTTPTask()
+        //we have to add the explicit type, else the wrong type is inferred. See the vluxe.io article for more info.
+        let params: Dictionary<String,AnyObject> = ["category": category, "title": title]
+        request.POST("http://178.62.135.117/chatrooms", parameters: params, completionHandler: {(response: HTTPResponse) in
+            if let err = response.error {
+                println("error: \(err.localizedDescription)")
+                return //also notify app of failure as needed
+            }
+            if let res: AnyObject = response.responseObject {
+                println("response: \(res)")
+            }
+        })
+        
+        
+        // On success callback, we'll throw it in coredata
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity =  NSEntityDescription.entityForName("Chatroom",
+            inManagedObjectContext:
+            managedContext)
+        
+        let chatroom = NSManagedObject(entity: entity!,
+            insertIntoManagedObjectContext:managedContext)
+        
+        chatroom.setValue(title, forKey: "title")
+        chatroom.setValue(category, forKey: "category")
+        // Id is what we get back after post request
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }  
+
+        chatrooms.append(chatroom)
+    }
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chatrooms.count
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        
+        let chatroom = chatrooms[indexPath.row]
+        cell.textLabel!.text = chatroom.valueForKey("title") as? String
+        
+        return cell
+    }
     
 }
